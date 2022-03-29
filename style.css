@@ -121,3 +121,17 @@ li, p, a {
     left: 10%;
     transform: translateY(-50%);
 }
+
+.section-header {
+    text-align: center;
+}
+.section-header p {
+    color: #c7a17a;
+}
+.section-header h2 {
+    color: #19100F;
+}
+.section-header hr {
+    background-color: #c7a17a;
+    height: 2px;
+}
