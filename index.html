@@ -11,11 +11,11 @@
     <div id="navigation">
         <h1><a href="">Coffee Bean</a></h1>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Merchandise</a></li>
-            <li><a href="">Discount</a></li>
-            <li><a href="">On Sale</a></li>
-            <li><a href="">Reservation</a></li>
+            <li><a href="#navigation">Home</a></li>
+            <li><a href="#merch">Merchandise</a></li>
+            <li><a href="#discount">Discount</a></li>
+            <li><a href="#merch-sale">On Sale</a></li>
+            <li><a href="#reservation">Reservation</a></li>
         </ul>
     </div>
 
@@ -175,18 +175,18 @@
             <hr>
         </div>
         <form action="">
-            <div class="form-group">
+            <div class="form-group form-group2">
                 <label for="full_name">Full Name</label>
-                <input type="text" id="full_name" placeholder="Last Name, First Name">
+                <input type="text" name="full_name" id="full_name" placeholder="Last Name, First Name">
                 <label for="email_ad">Email Address</label>
-                <input type="email" id="email_ad" placeholder="mail@mail.com">
+                <input type="email" name="email_ad" id="email_ad" placeholder="mail@mail.com">
                 <label for="phone_num">Phone Number</label>
-                <input type="tel" id="phone_num" placeholder="(*63)912345678">
+                <input type="tel" name="phone_num" id="phone_num" placeholder="(*63)912345678">
 
                 <p>Reservation Details</p>
 
                 <label for="guest_num">Number of Guest</label>
-                <select name="" id="guest_num" >
+                <select name="guest_num" id="guest_num">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -198,18 +198,134 @@
                 
                 <p>Reservation Time</p>
                 
-                <input type="radio" name="reserve-time" id="time-am">
-                <label for="time-am">Morning</label>
-                <input type="radio" name="reserve-time" id="time-pm">
-                <label for="time-pm">Afternoon</label>
-                <input type="radio" name="reserve-time" id="time-night">
-                <label for="time-night">Night</label>
+                <div id="time-group">
+                    <input type="radio" name="reserve-time" id="time-am">
+                    <label for="time-am">Morning</label>
+                    <input type="radio" name="reserve-time" id="time-pm">
+                    <label for="time-pm">Afternoon</label>
+                    <input type="radio" name="reserve-time" id="time-night">
+                    <label for="time-night">Night</label>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="">Additional Request</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="form-group form-group2">
+                <label for="added_request">Additional Request</label>
+                <textarea name="" id="added_request" cols="30" rows="8"></textarea>
+                
+                <h3>Payment</h3>
+                <p>Payment Accepted Cards</p>
+                
+                <label for="card_name"></label>
+                <input type="text" id="card_name" placeholder="John Doe">
+                <label for="card_num">Credit Card Number</label>
+                <input type="number" id="card_num" placeholder="1234567890">
+
+                <div id="terms-group">
+                    <input type="checkbox" id="agree_terms" required>
+                    <label for="agree_terms">I agree to the Terms and Conditions</label>
+                </div>
+
+                <input type="submit" value="Send">
             </div>
         </form>
+    </div>
+
+    <div id="footer">
+        <div class="footer-content">
+            <div class="footer-widget">
+                <h3>Opening Hours</h3>
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th>..........</th>
+                        <th>Availability</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <th>..........</td>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>..........</td>
+                        <td>09:00-22:00</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>..........</td>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>..........</td>
+                        <td>09:00-22:00</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>..........</td>
+                        <td>09:00-22:00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>..........</td>
+                        <td>09:00-22:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>..........</td>
+                        <td>09:00-22:00</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-widget">
+                <h3>Latest Post</h3>
+                <h4>Expand your mind, Change Everything</h4>
+                <p>14.02.2017</p>
+                <h4>Places to get lost</h4>
+                <p>14.02.2017</p>
+                <h4>Lewis Howes</h4>
+                <p>14.02.2017</p>
+                <h4>Elevate your Expectation</h4>
+                <p>14.02.2017</p>
+            </div>
+            <div class="footer-widget">
+                <h3>Contact Us</h3>
+
+                <p>info@coffeebean.com</p>
+                <p>1-444-123-4559</p>
+                <p>Raymond Boulevard 224, New York</p>
+
+                <h3 id="text-search">The Last Standard Post</h3>
+                <form action="">
+                    <input type="text" name="text-search" id="text-search">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+            <div class="footer-widget">
+                <h3>Other Locations</h3>
+
+                <h4>Coffee Bean Philippines</h4>
+                <p>1234 IT PARK</p>
+                <p>Cebu City</p>
+
+                <h4>Coffee Bean Tokyo</h4>
+                <p>1234 Business Park</p>
+                <p>Tokyo Japan</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-social">
+        <div class="social-widget">
+            <h3>Coffee Bean</h3>
+        </div>
+        <div class="social-widget">
+            <a href=""><img src="images/icon-fb.png" alt=""></a>
+            <a href=""><img src="images/icon-ig.png" alt=""></a>
+            <a href=""><img src="images/icon-tw.png" alt=""></a>
+        </div>
+        <div class="social-widget">
+            <p>&copy; 2021 | Kredo IT Abroad</p>
+        </div>
     </div>
 </body>
 </html>
